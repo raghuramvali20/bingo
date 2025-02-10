@@ -8,7 +8,7 @@ const io = new Server(server);
 
 let roomNumber = 0;
 
-app.get('/game', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(__dirname + '/game.html');
 });
 

@@ -28,7 +28,7 @@ io.on("connection", (socket) => {
         roomNumber++;
         room = `room-${roomNumber}`;
     }
-
+    
     socket.join(room);
     console.log(`Player connected to ${room}`);
 

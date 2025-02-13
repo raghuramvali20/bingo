@@ -94,7 +94,7 @@ socket.on("message", (message) => {
     console.log(message);
     messageBox.style.display = 'flex'
     messageBox.textContent = message;
-    setTimeout(() => {
+    body.addEventListener('click', () => {
         messageBox.style.display = 'none'
-    }, 1000)
+    })
 });

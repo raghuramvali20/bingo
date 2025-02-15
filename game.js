@@ -113,7 +113,7 @@ socket.on("message", (message) => {
     else{
         body.addEventListener('click', () => {
             messageBox.style.display = 'none';
-            if(message === `${RoomMembers[0]} winned the match` || message === `${RoomMembers[1]} winned the match`){  
+            if(message === `${RoomMembers[0]} winned the match` || message === `${RoomMembers[1]} winned the match` || message === 'Oponent has left the game'){  
                 console.log(RoomMembers[0],RoomMembers[1])  
                 window.location.href = '/'
              }

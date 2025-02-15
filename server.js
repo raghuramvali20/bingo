@@ -60,7 +60,7 @@ io.on("connection", (socket) => {
 
     socket.on("disconnect", () => {
         console.log("A player disconnected");
-        io.to(room).emit("message", "A player has left the game");
+        io.to(room).emit("message", "Oponent has left the game");
     });
 });
 

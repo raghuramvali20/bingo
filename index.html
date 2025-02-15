@@ -4,6 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BINGO Game</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #225;
+        }
+        main{
+            background-color: blue;
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            box-shadow: 0 0 20px #005;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        form>input, form>button{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 20px;
+            width: 100%;
+            background-color: #005;
+            color: white;
+        }
+        form>input{
+            outline: none;
+        }
+        form>button{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <main>

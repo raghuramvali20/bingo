@@ -30,7 +30,7 @@ const randomArr = (n) => {
 };
 randomArr(25);
 
-gridBox.forEach((element, index) => {
+gridBox.forEach((element) => {
     element.addEventListener("click", function changeColor() {
         const num = parseInt(element.textContent);
         if (![...userClickedNumbers[0], ...userClickedNumbers[1]].includes(num) && flag === 0) {
@@ -54,7 +54,7 @@ function Striking(indexes) {
     console.log("Indexes for checking:", indexes);
 
     if ([0, 1, 2, 3, 4].every((element) => indexes.includes(element)))
-        strikedRows += 5; // changed for testing
+        strikedRows += 1;
     if ([5, 6, 7, 8, 9].every((element) => indexes.includes(element)))
         strikedRows += 1;
     if ([10, 11, 12, 13, 14].every((element) => indexes.includes(element)))

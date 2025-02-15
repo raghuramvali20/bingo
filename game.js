@@ -111,10 +111,12 @@ socket.on("message", (message) => {
         console.log
     }
     else{
+        let span = document.createElement('span');
+        span.innerText =  'Tap anywhere to continue';
+        messageBox.appendChild(span);
         body.addEventListener('click', () => {
             messageBox.style.display = 'none';
-            if(message === `${RoomMembers[0]} winned the match` || message === `${RoomMembers[1]} winned the match` || message === 'Oponent has left the game'){  
-                console.log(RoomMembers[0],RoomMembers[1])  
+            if(message === `${RoomMembers[0]} winned the match` || message === `${RoomMembers[1]} winned the match` || message === 'Opponent has left the game'){  
                 window.location.href = '/'
              }
         });

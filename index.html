@@ -8,15 +8,18 @@
 <body>
     <main>
         <form action="">
+            <input type="text" placeholder="Enter your name" name="name"> 
             <button type="submit">Stat game</button>
         </form>
     </main>
 </body>
 <script>
     const start = document.querySelector('form')
+    const input = document.querySelector('input')
     start.addEventListener('submit', () => {
+        let queryString = `name=${encodeURIComponent(input.value)}`
         event.preventDefault()
-        window.location.href = '/game'
+        window.location.href = `/game?${queryString}`
     })
 </script>
 </html>
